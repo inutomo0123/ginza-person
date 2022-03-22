@@ -9,7 +9,7 @@ cd "$SCRIPT_DIR"
 if [ ! -d "$SCRIPT_DIR/venv" ]; then
 	python3 -m venv venv
 else
-	echo "既に仮想環境があるため、中止します。" >&2
+	echo "既に仮想環境があるため、中止します。" 1>&2
 	exit 1
 fi
 
